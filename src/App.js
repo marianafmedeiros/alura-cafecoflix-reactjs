@@ -14,7 +14,7 @@ function App() {
         <BannerMain
           videoTitle = {initialData.categories[0].videos[0].title}
           url = {initialData.categories[0].videos[0].url}
-          videoDescription = { "What is front-end?" }
+          videoDescription = { "Lane 8" }
         />
 
         <Carousel 
@@ -29,19 +29,6 @@ function App() {
         <Carousel 
           category = {initialData.categories[2]}
         />
-
-        <Carousel 
-          category = {initialData.categories[3]}
-        />
-
-        <Carousel 
-          category = {initialData.categories[4]}
-        />
-
-        <Carousel 
-          category = {initialData.categories[5]}
-        />
-
         
         <Footer />
         

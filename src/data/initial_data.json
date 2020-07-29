@@ -1,183 +1,117 @@
 {
   "categories": [
     {
-      "title": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "color": "#6BD1FF",
+      "title": "Electronic Music - Chill",
+      "link": "https://www.youtube.com/watch?v=cQKlNecZ1IE",
+      "color": "#4A2C9B",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Chill Electronic Radio",
+        "url": "https://www.youtube.com/watch?v=cQKlNecZ1IE"
       },
       "videos": [
         {
-          "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "title": "Lane 8 - Room Service Festival",
+          "url": "https://www.youtube.com/watch?v=LFM3Q7rWVvo"
         },
         {
-          "title": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "title": "The Blaze @ Aiguille du Midi in Chamonix - The Cercle ",
+          "url": "https://www.youtube.com/watch?v=uGEDSGCUkXk"
         },
         {
-          "title": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-        },
-        {
-          "title": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-        },
-        {
-          "title": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-          "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "title": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "title": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+          "title": "Ben Bohmer @ Anjunadeep Open Air: Prague ",
+          "url": "https://www.youtube.com/watch?v=b9kThoLdDc8"
+        }       
       ]
     },
     {
-      "title": "Back End",
-      "color": "#00C86F",
+      "title": "Indie/Folk Music",
+      "color": "#AEDAFF",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "",
+        "url": ""
       },
       "videos": [
         {
-          "title": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "title": "Indie/Rock/Alternative Compilation - July 2020",
+          "url": "https://www.youtube.com/watch?v=tRamnxe5fW8"
         },
         {
-          "title": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "title": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "title": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "title": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "title": "This is Hollow Coves",
+          "url": "https://www.youtube.com/watch?v=iWWMrCV-SBw&list=PLu-b9PyINIxM1bEzifGyHBggHnXcoaL92"
         }
       ]
     },
     {
-      "title": "Data Science e Inteligência Artificial",
-      "color": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
-      "videos": [
-        {
-          "title": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-        },
-        {
-          "title": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-        },
-        {
-          "title": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "title": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-        }
-      ]
-    },
-    {
-      "title": "Filmes",
-      "color": "orange",
-      "videos": [
-        {
-          "title": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-        },
-        {
-          "title": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "title": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "title": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        }
-      ]
-    },
-    {
-      "title": "Games",
-      "color": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
-      "videos": [
-        {
-          "title": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
-        },
-        {
-          "title": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-        },
-        {
-          "title": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-        },
-        {
-          "title": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "title": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-        }
-      ]
-    },
-    {
-      "title": "Aprendendo a aprender tecnologia",
+      "title": "Taylor Swift - folklore <3",
       "color": "#6b5be2",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+        "text": "",
+        "url": ""
       },
       "videos": [
         {
-          "title": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "title": "cardigan",
+          "url": "https://www.youtube.com/watch?v=K-a8s8OLBSE&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=2&t=0s"
         },
         {
-          "title": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "title": "the 1",
+          "url": "https://www.youtube.com/watch?v=KsZ6tROaVOQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=3&t=0s"
         },
         {
-          "title": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "title": "the last great american dysnaty",
+          "url": "https://www.youtube.com/watch?v=2s5xdY6MCeI&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=5&t=0s"
         },
         {
-          "title": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "title": "exile",
+          "url": "https://www.youtube.com/watch?v=osdoLjUNFnA&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=6&t=0s"
         },
         {
-          "title": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "title": "my tears ricochet",
+          "url": "https://www.youtube.com/watch?v=OWbDJFtHl3w&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=7&t=0s"
+        },
+        {
+          "title": "mirrorball",
+          "url": "https://www.youtube.com/watch?v=KaM1bCuG4xo&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=8&t=0s"
+        },
+        {
+          "title": "seven",
+          "url": "https://www.youtube.com/watch?v=pEY-GPsru_E&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=9&t=0s"
+        },
+        {
+          "title": "august",
+          "url": "hhttps://www.youtube.com/watch?v=nn_0zPAfyo8&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=10&t=0s"
+        },
+        {
+          "title": "this is me trying",
+          "url": "https://www.youtube.com/watch?v=9bdLTPNrlEg&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=11&t=0s"
+        },
+        {
+          "title": "illicit affairs",
+          "url": "https://www.youtube.com/watch?v=MLV2SJKWk4M&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=12&t=0s"
+        },
+        {
+          "title": "invisible string",
+          "url": "https://www.youtube.com/watch?v=OuFnpmGwg5k&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=13&t=0s"
+        },
+        {
+          "title": "mad woman",
+          "url": "https://www.youtube.com/watch?v=6DP4q_1EgQQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=14&t=0s"
+        },
+        {
+          "title": "epiphany",
+          "url": "https://www.youtube.com/watch?v=DUnDkI7l9LQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=15&t=0s"
+        },
+        {
+          "title": "betty",
+          "url": "https://www.youtube.com/watch?v=6TAPqXkZW_I&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=16&t=0s"
+        },
+        {
+          "title": "peace",
+          "url": "https://www.youtube.com/watch?v=HpxX4ZE4KWE&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=17&t=0s"
+        },
+        {
+          "title": "hoax",
+          "url": "https://www.youtube.com/watch?v=ryLGxpjwAhM&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=18&t=0s"
         }
       ]
     }
