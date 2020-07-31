@@ -3,7 +3,7 @@ import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider , { SliderItem } from './components/Slider';
 
-function VideoCardGroup({
+function Carousel({
   ignoreFirstVideo,
   category,
 }) {
@@ -46,4 +46,4 @@ function VideoCardGroup({
   );
 }
 
-export default VideoCardGroup;
+export default Carousel;
