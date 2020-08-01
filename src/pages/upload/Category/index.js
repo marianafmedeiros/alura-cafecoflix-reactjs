@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BaseTemplate from '../../../components/BaseTemplate';
 import FormField from '../../../components/FormField';
@@ -27,6 +27,20 @@ function CreateCategory() {
       eventHandler.target.value,
     );
   }
+
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categories';
+    fetch(URL)
+      .then(async (response) => {
+        const myData = await response.json();
+        setCategories([
+          ...myData,
+        ]);
+      });
+    // setTimeout(() => {
+
+    // }, 4 * 1000);
+  }, []);
 
   return (
     <BaseTemplate>
@@ -73,6 +87,15 @@ function CreateCategory() {
         </Button>
 
       </form>
+
+      {
+        categories.length === 0
+        && (
+        <div>
+          Loading...
+        </div>
+        )
+      }
 
       <ul>
         { categories.map((category) => (

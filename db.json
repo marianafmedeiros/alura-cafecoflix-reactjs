@@ -1,0 +1,16 @@
+{
+  "categories": [
+    { 
+      "id": 1,
+      "name": "Electronic Chill",
+      "description": "Electronic Chill Music",
+      "color": "#AEDAFF"
+    },
+    { 
+      "id": 2,
+      "name": "Folk Chill",
+      "description": "Folk Chill Music",
+      "color": "#AEDAFF"
+    }
+  ]
+}
