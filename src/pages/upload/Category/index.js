@@ -1,92 +1,94 @@
 import React, { useState } from 'react';
-import BaseTemplate from '../../../components/BaseTemplate'
 import { Link } from 'react-router-dom';
+import BaseTemplate from '../../../components/BaseTemplate';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button/Button';
 
 function CreateCategory() {
   const categoryObj = {
     name: '',
     description: '',
     color: '',
-  }
-  
+  };
+
   const [categories, setCategories] = useState([]);
-  const [ categoryValues, setCategoryValues ] = useState(categoryObj);
+  const [categoryValues, setCategoryValues] = useState(categoryObj);
 
   function setValue(key, value) {
     setCategoryValues({
       ...categoryValues,
-     [key]: value,
-      
-    })
-  };
+      [key]: value,
+    });
+  }
 
   function handleChange(eventHandler) {
-    const { getAttribute, value } = eventHandler.target;
     setValue(
-      getAttribute('name'),
-      value
-    )
+      eventHandler.target.getAttribute('name'),
+      eventHandler.target.value,
+    );
   }
 
   return (
     <BaseTemplate>
       <h1>Create Category</h1>
 
-      <form onSubmit= {function handleSubmit(e) {
-          e.preventDefault();
-          setCategories([...categories, categoryValues])
-          setCategoryValues(categoryObj)
-          console.log('categories: ', categories)
-          console.log('category name: ', categoryValues)
-          }
-        } >
-        
-        {/* <FormField fieldName, fieldValue, fieldHandle/> */}
+      <form onSubmit={function handleSubmit(e) {
+        e.preventDefault();
+        setCategories([
+          ...categories,
+          categoryValues,
+        ]);
+        setCategoryValues(categoryObj);
+        // console.log('categories: ', categories);
+        // console.log('category object: ', categoryValues);
+      }}
+      >
 
-        <FormField 
-          fieldLabel = "Name"
-          fieldType = "input"
-          fieldName = "name" 
-          fieldValue = {categoryValues.name} 
-          fieldHandler = { handleChange }
+        <FormField
+          fieldLabel="Name"
+          fieldType="input"
+          fieldName="name"
+          fieldValue={categoryValues.name}
+          onChange={handleChange}
         />
 
-        <FormField 
-          fieldLabel = "Description"
-          fieldType = "text"
-          fieldName = "description" 
-          fieldValue = {categoryValues.description} 
-          fieldHandler = { handleChange }
+        <FormField
+          fieldLabel="Description"
+          fieldType="textarea"
+          fieldName="description"
+          fieldValue={categoryValues.description}
+          onChange={handleChange}
         />
 
-        <FormField 
-          fieldLabel = "color"
-          fieldType = "color"
-          fieldName = "color" 
-          fieldValue = {categoryValues.color} 
-          fieldHandler = { handleChange }
+        <FormField
+          fieldLabel="Color"
+          fieldType="color"
+          fieldName="color"
+          fieldValue={categoryValues.color}
+          onChange={handleChange}
         />
 
-        <button>
+        <Button>
           Save
-        </button>
+        </Button>
 
       </form>
 
       <ul>
-       { categories.map((category, idx) => {
-         return(
-          <li key={`${category.name}${idx}`}> {category.name} </li>
-         )
-       }) }
+        { categories.map((category) => (
+          <li key={`${category.name}`}>
+            {' '}
+            {category.name}
+            {' '}
+          </li>
+        )) }
       </ul>
 
       <Link to="/">
         Go to Home
       </Link>
     </BaseTemplate>
-  )
-};
+  );
+}
 
 export default CreateCategory;
