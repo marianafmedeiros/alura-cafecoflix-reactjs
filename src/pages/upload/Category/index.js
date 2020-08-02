@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import BaseTemplate from '../../../components/BaseTemplate';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button/Button';
+import useForm from '../../../hooks/useForm';
 
 function CreateCategory() {
   const categoryObj = {
@@ -11,26 +12,12 @@ function CreateCategory() {
     color: '',
   };
 
+  const { handleChange, categoryValues, clearForm } = useForm(categoryObj);
   const [categories, setCategories] = useState([]);
-  const [categoryValues, setCategoryValues] = useState(categoryObj);
-
-  function setValue(key, value) {
-    setCategoryValues({
-      ...categoryValues,
-      [key]: value,
-    });
-  }
-
-  function handleChange(eventHandler) {
-    setValue(
-      eventHandler.target.getAttribute('name'),
-      eventHandler.target.value,
-    );
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-      ? 'https://localhost:8080/categories'
+      ? 'http://localhost:8080/categories'
       : 'https://cafecoflix.herokuapp.com/categories';
     fetch(URL)
       .then(async (response) => {
@@ -39,9 +26,6 @@ function CreateCategory() {
           ...myData,
         ]);
       });
-    // setTimeout(() => {
-
-    // }, 4 * 1000);
   }, []);
 
   return (
@@ -54,17 +38,18 @@ function CreateCategory() {
           ...categories,
           categoryValues,
         ]);
-        setCategoryValues(categoryObj);
+
+        clearForm();
         // console.log('categories: ', categories);
         // console.log('category object: ', categoryValues);
       }}
       >
 
         <FormField
-          fieldLabel="Name"
+          fieldLabel="Title"
           fieldType="input"
-          fieldName="name"
-          fieldValue={categoryValues.name}
+          fieldName="title"
+          fieldValue={categoryValues.title}
           onChange={handleChange}
         />
 
@@ -101,9 +86,9 @@ function CreateCategory() {
 
       <ul>
         { categories.map((category) => (
-          <li key={`${category.name}`}>
+          <li key={`${category.title}`}>
             {' '}
-            {category.name}
+            {category.title}
             {' '}
           </li>
         )) }
