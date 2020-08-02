@@ -4,6 +4,7 @@ import BaseTemplate from '../../../components/BaseTemplate';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button/Button';
 import useForm from '../../../hooks/useForm';
+import categoriesRepos from '../../../repositories/categories';
 
 function CreateCategory() {
   const categoryObj = {
@@ -16,15 +17,14 @@ function CreateCategory() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categories'
-      : 'https://cafecoflix.herokuapp.com/categories';
-    fetch(URL)
-      .then(async (response) => {
-        const myData = await response.json();
+    categoriesRepos.getAllWithVideos()
+      .then((categoriesVideos) => {
         setCategories([
-          ...myData,
+          ...categoriesVideos,
         ]);
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   }, []);
 

@@ -1,16 +1,200 @@
 {
   "categories": [
-    { 
+    {
       "id": 1,
-      "name": "Electronic Chill",
-      "description": "Electronic Chill Music",
-      "color": "#AEDAFF"
+      "title": "Electronic Music - Chill",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Electronic Music Radio",
+        "url": "https://www.youtube.com/watch?v=cQKlNecZ1IE"
+      }
     },
-    { 
+    {
       "id": 2,
-      "name": "Folk Chill",
-      "description": "Folk Chill Music",
-      "color": "#AEDAFF"
+      "title": "Indie/Folk Music",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "AlexRainBirdMusic Channel",
+        "url": "https://www.youtube.com/user/alexrainbird"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Taylor Swift - folklore <3",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Taylor Swift Official Channel",
+        "url": "https://www.youtube.com/c/TaylorSwift/videos?view=0&sort=dd&shelf_id=0"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Programming Just Because",
+      "color": "orange"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "title": "Lane 8 - Room Service Festival",
+      "url": "https://www.youtube.com/watch?v=LFM3Q7rWVvo"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "title": "Salzburg - Worakls (Live on the hill)",
+      "url": "https://www.youtube.com/watch?v=p0WFrHWwGZ0"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "title": "The Blaze @ Aiguille du Midi in Chamonix - The Cercle ",
+      "url": "https://www.youtube.com/watch?v=uGEDSGCUkXk"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "title": "Ben Bohmer @ Anjunadeep Open Air: Prague ",
+      "url": "https://www.youtube.com/watch?v=b9kThoLdDc8"
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "title": "Indie/Rock/Alternative Compilation - July 2020",
+      "url": "https://www.youtube.com/watch?v=tRamnxe5fW8"
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "title": "This is Hollow Coves",
+      "url": "https://www.youtube.com/watch?v=iWWMrCV-SBw&list=PLu-b9PyINIxM1bEzifGyHBggHnXcoaL92"
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "title": "Bon Iver Playlist",
+      "url": "https://www.youtube.com/watch?v=I3voQGTnP9A"
+    },
+    {
+      "id": 8,
+      "categoryId": 3,
+      "title": "cardigan",
+      "url": "https://www.youtube.com/watch?v=K-a8s8OLBSE&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=2&t=0s"
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "title": "the 1",
+      "url": "https://www.youtube.com/watch?v=KsZ6tROaVOQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=3&t=0s"
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "title": "the last great american dysnaty",
+      "url": "https://www.youtube.com/watch?v=2s5xdY6MCeI&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=5&t=0s"
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "title": "exile",
+      "url": "https://www.youtube.com/watch?v=osdoLjUNFnA&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=6&t=0s"
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "title": "my tears ricochet",
+      "url": "https://www.youtube.com/watch?v=OWbDJFtHl3w&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=7&t=0s"
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "title": "mirrorball",
+      "url": "https://www.youtube.com/watch?v=KaM1bCuG4xo&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=8&t=0s"
+    },
+    {
+      "id": 14,
+      "categoryId": 3,
+      "title": "seven",
+      "url": "https://www.youtube.com/watch?v=pEY-GPsru_E&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=9&t=0s"
+    },
+    {
+      "id": 15,
+      "categoryId": 3,
+      "title": "august",
+      "url": "hhttps://www.youtube.com/watch?v=nn_0zPAfyo8&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=10&t=0s"
+    },
+    {
+      "id": 16,
+      "categoryId": 3,
+      "title": "this is me trying",
+      "url": "https://www.youtube.com/watch?v=9bdLTPNrlEg&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=11&t=0s"
+    },
+    {
+      "id": 17,
+      "categoryId": 3,
+      "title": "illicit affairs",
+      "url": "https://www.youtube.com/watch?v=MLV2SJKWk4M&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=12&t=0s"
+    },
+    {
+      "id": 18,
+      "categoryId": 3,
+      "title": "invisible string",
+      "url": "https://www.youtube.com/watch?v=OuFnpmGwg5k&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=13&t=0s"
+    },
+    {
+      "id": 19,
+      "categoryId": 3,
+      "title": "mad woman",
+      "url": "https://www.youtube.com/watch?v=6DP4q_1EgQQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=14&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 3,
+      "title": "epiphany",
+      "url": "https://www.youtube.com/watch?v=DUnDkI7l9LQ&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=15&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 3,
+      "title": "peace",
+      "url": "https://www.youtube.com/watch?v=HpxX4ZE4KWE&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=17&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 3,
+      "title": "betty",
+      "url": "https://www.youtube.com/watch?v=6TAPqXkZW_I&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=16&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 3,
+      "title": "hoax",
+      "url": "https://www.youtube.com/watch?v=ryLGxpjwAhM&list=PLINj2JJM1jxNNBnGb3WvHmcyCyfl0VlJX&index=18&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "title": "Data Structures Playlist - Caleb Curry",
+      "url": "https://www.youtube.com/watch?v=4RLhuZ3N9nc&list=PL_c9BZzLwBRLpDEpYRFXKBN-2ZCsAx0ps"
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "title": "How to Become a Good Backend Engineer (Fundamentals) - Hussein Nasser",
+      "url": "https://www.youtube.com/watch?v=V3ZPPPKEipA"
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "title": "CS50 - Introduction to Machine Learning",
+      "url": "https://www.youtube.com/watch?v=gR8QvFmNuLE&list=PLhQjrBD2T382Nz7z1AEXmioc27axa19Kv"
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "title": "Learn Programming Through Problem Solving - Derek Banas",
+      "url": "https://www.youtube.com/watch?v=nwjAHQERL08&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt"
     }
   ]
 }

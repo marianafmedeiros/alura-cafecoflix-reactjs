@@ -1,35 +1,57 @@
-import React from 'react';
-import Menu from '../../components/Menu/Menu';
-import initialData from '../../data/initial_data.json';
+import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
+import categoriesRepos from '../../repositories/categories';
+import BaseTemplate from '../../components/BaseTemplate';
 
 function Home() {
+  const [initialData, setInitialData] = useState([]);
+
+  useEffect(() => {
+    categoriesRepos.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        setInitialData([
+          ...categoriesWithVideos,
+        ]);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <div style={{ background: '#141414' }}>
-      <Menu />
+      <BaseTemplate paddingAll={0}>
 
-      <BannerMain
-        videoTitle={initialData.categories[0].videos[0].title}
-        url={initialData.categories[0].videos[0].url}
-        videoDescription="Lane 8"
-      />
+        {initialData.length === 0 && (<div>Loading...</div>)}
 
-      <Carousel
-        ignoreFirstVideo
-        category={initialData.categories[0]}
-      />
+        {initialData.map((category, idx) => {
+          if (idx === 0) {
+            return (
+              <div key={category.id}>
+                <BannerMain
+                  videoTitle={initialData[0].videos[0].title}
+                  url={initialData[0].videos[0].url}
+                  videoDescription="Lane 8"
+                />
 
-      <Carousel
-        category={initialData.categories[1]}
-      />
+                <Carousel
+                  ignoreFirstVideo
+                  category={initialData[0]}
+                />
+              </div>
+            );
+          }
 
-      <Carousel
-        category={initialData.categories[2]}
-      />
+          return (
+            <Carousel
+              key={category.id}
+              category={category}
+            />
+          );
+        })}
 
-      <Footer />
+      </BaseTemplate>
 
     </div>
   );

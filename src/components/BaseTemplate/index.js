@@ -1,27 +1,31 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
+import styled, { css } from 'styled-components';
 import Footer from '../Footer';
 import Menu from '../Menu/Menu';
-import styled from 'styled-components';
 
-const Main = styled.main `
+const Main = styled.main`
   background-color: var(--black);
   color: var(--white);
   flex: 1;
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
-`
+  ${({paddingAll}) => css`
+    padding: ${paddingAll};
+  `}
+`;
 
-function BaseTemplate({ children }) {
-  return(
+function BaseTemplate({ children, paddingAll }) {
+  return (
     <>
       <Menu />
-        <Main>
-          { children }
-        </Main>
+      <Main paddingAll={paddingAll}>
+        { children }
+      </Main>
       <Footer />
     </>
-  )
-};
+  );
+}
 
 export default BaseTemplate;
