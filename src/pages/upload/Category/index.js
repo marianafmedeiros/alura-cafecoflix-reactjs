@@ -29,7 +29,9 @@ function CreateCategory() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categories';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'https://localhost:8080/categories'
+      : 'https://cafecoflix.herokuapp.com/categories';
     fetch(URL)
       .then(async (response) => {
         const myData = await response.json();
