@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-function useForm(categoryObj) {
-  const [categoryValues, setCategoryValues] = useState(categoryObj);
+function useForm(initialObj) {
+  const [values, setValues] = useState(initialObj);
 
   function setValue(key, value) {
-    setCategoryValues({
-      ...categoryValues,
+    setValues({
+      ...values,
       [key]: value,
     });
   }
@@ -18,12 +18,12 @@ function useForm(categoryObj) {
   }
 
   function clearForm() {
-    setCategoryValues(categoryObj);
+    setValues(initialObj);
   }
 
   return {
     handleChange,
-    categoryValues,
+    values,
     clearForm,
   };
 }

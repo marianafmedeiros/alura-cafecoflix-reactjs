@@ -8,12 +8,12 @@ import categoriesRepos from '../../../repositories/categories';
 
 function CreateCategory() {
   const categoryObj = {
-    name: '',
+    title: '',
     description: '',
     color: '',
   };
 
-  const { handleChange, categoryValues, clearForm } = useForm(categoryObj);
+  const { handleChange, values, clearForm } = useForm(categoryObj);
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -36,20 +36,19 @@ function CreateCategory() {
         e.preventDefault();
         setCategories([
           ...categories,
-          categoryValues,
+          values,
         ]);
-
         clearForm();
         // console.log('categories: ', categories);
-        // console.log('category object: ', categoryValues);
+        // console.log('category object: ', values);
       }}
       >
 
         <FormField
-          fieldLabel="Title"
+          fieldLabel="Category Name"
           fieldType="input"
           fieldName="title"
-          fieldValue={categoryValues.title}
+          fieldValue={values.title}
           onChange={handleChange}
         />
 
@@ -57,7 +56,7 @@ function CreateCategory() {
           fieldLabel="Description"
           fieldType="textarea"
           fieldName="description"
-          fieldValue={categoryValues.description}
+          fieldValue={values.description}
           onChange={handleChange}
         />
 
@@ -65,7 +64,7 @@ function CreateCategory() {
           fieldLabel="Color"
           fieldType="color"
           fieldName="color"
-          fieldValue={categoryValues.color}
+          fieldValue={values.color}
           onChange={handleChange}
         />
 
@@ -85,6 +84,7 @@ function CreateCategory() {
       }
 
       <ul>
+        <p>Existing Categories:</p>
         { categories.map((category) => (
           <li key={`${category.title}`}>
             {' '}
@@ -94,9 +94,6 @@ function CreateCategory() {
         )) }
       </ul>
 
-      <Link to="/">
-        Go to Home
-      </Link>
     </BaseTemplate>
   );
 }

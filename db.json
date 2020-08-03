@@ -195,6 +195,18 @@
       "categoryId": 4,
       "title": "Learn Programming Through Problem Solving - Derek Banas",
       "url": "https://www.youtube.com/watch?v=nwjAHQERL08&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt"
+    },
+    {
+      "title": "Deborah de Luca",
+      "url": "https://www.youtube.com/watch?v=yEbrvMljMCg",
+      "categoryId": 1,
+      "id": 21
+    },
+    {
+      "title": "Solomun",
+      "url": "https://www.youtube.com/watch?v=QHDRRxKlimY",
+      "categoryId": 1,
+      "id": 22
     }
   ]
 }
